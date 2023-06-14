@@ -14,7 +14,7 @@ import style from './style';
 import globalStyle from '../../Zassets/styles/main';
 import UserStory from '../../components/UserStory/UserStory';
 import UserPost from '../../components/userPosts/userPost';
-import { Routes } from '../../navigation/routes';
+import {Routes} from '../../navigation/routes';
 
 const Home = ({navigation}) => {
   const data = [
@@ -127,6 +127,7 @@ const Home = ({navigation}) => {
     }
     return data.slice(startIndex, startIndex + pageSize);
   };
+
   return (
     <SafeAreaView style={globalStyle.backgroundWhite}>
       <StatusBar backgroundColor={'#fff'} barStyle={'dark-content'} />
@@ -136,9 +137,6 @@ const Home = ({navigation}) => {
             <View style={style.header}>
               <Title title={"Let's Explore"} />
               <Pressable
-                onPress={() => {
-                  navigation.navigate(Routes.Profile);
-                }}
                 style={style.messageIcon}>
                 <FontAwesomeIcon
                   icon={faEnvelope}
