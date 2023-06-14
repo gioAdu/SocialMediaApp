@@ -3,7 +3,6 @@ import {View, Text, SafeAreaView, ScrollView, Image} from 'react-native';
 import globalStyle from '../../Zassets/styles/main';
 import style from './style';
 import {ProfileTabNav} from '../../navigation/MainNavigation';
-import {verticalScale} from '../../Zassets/styles/scaling';
 const Profile = () => {
   return (
     <SafeAreaView style={[globalStyle.backgroundWhite, globalStyle.flex]}>
